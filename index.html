@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="./img/logo-dnd.png" alt="Logo de la empresa">
+            <h2 class="title">Campaña de Mythralia DnD</h2>
+        </div>
+
+        <!-- Logos de redes sociales -->
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="./img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="mailto:info@tusitio.com">
+                <img src="./img/sobre.png" alt="Email">
+            </a>
+        </div>
+    </div>
+
+    <!-- Menú principal -->
+    <nav>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="./pages/historia.html">HISTORIA</a></li>
+            <li><a href="./pages/razas.html">RAZAS Y CLASES</a></li>
+            <li><a href="./pages/galeria.html">GALERIA DE PERSONAJES</a></li>
+            <li><a href="./pages/contacto.html">ÚNETE A LA CAMPAÑA!</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- Contenido principal -->
+<main class="hero">
+    <h1>¡Embárcate en una Épica Aventura en el Reino de Mythralia!</h1>
+    <h2>Bienvenido a la página oficial de la campaña de Mythralia de Dungeons & Dragons, donde los héroes nacen de la leyenda y las
+        leyendas se convierten en realidad. Sumérgete en un mundo de magia ancestral y peligros insondables, donde cada
+        decisión forjará tu destino. Desde las profundidades de los calabozos olvidados hasta los picos nevados de las
+        montañas prohibidas, tu valor será puesto a prueba. ¡Únete a nosotros y descubre qué leyendas te esperan!</h2>
+    <div class="slider-frame">
+        <ul>
+            <li><img src="./img/Default_A_tall_spiraling_tower_glowing_with_magical_energy_Sma_1.jpg" alt=""></li>
+            <li><img src="./img/Default_A_dense_mystical_forest_with_towering_ancient_trees_gl_1.jpg" alt=""></li>
+            <li><img src="./img/Default_A_bustling_dwarven_forge_with_glowing_furnaces_clangin_2.jpg" alt=""></li>
+            <li><img src="./img/Default_A_vast_ancient_library_with_towering_bookshelves_magic_2.jpg" alt=""></li>
+        </ul>
+    </div>
+    <audio controls autoplay>
+        <source src="./music/epic-dnd-music.mp3">
+    </audio>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Gabriel Boetto. Todos los derechos reservados.</p>
+</footer>
+</body>
+
+</html>

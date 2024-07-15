@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="../img/logo-dnd.png" alt="Logo de la empresa">
+            <h2 class="title">Campaña de Mythralia DnD</h2>
+        </div>
+
+        <!-- Logos de redes sociales -->
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="../img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="mailto:info@tusitio.com">
+                <img src="../img/sobre.png" alt="Email">
+            </a>
+        </div>
+    </div>
+
+    <!-- Menú principal -->
+    <nav>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../pages/historia.html">HISTORIA</a></li>
+            <li><a href="../pages/razas.html">RAZAS Y CLASES</a></li>
+            <li><a href="../pages/contacto.html">ÚNETE A LA CAMPAÑA!</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1>Productos</h1>
+        <p>Las ranas no se venden.😡</p>
+        <div class="galeria">
+            <div class="grid-item1">
+                <img src="../img/rana-grid1.jpg">
+            </div>
+            <div class="grid-item2">
+                <img src="../img/rana-grid2.jpg">
+            </div>
+            <div class="grid-item3">
+                <img src="../img/rana-grid3.jpg">
+            </div>
+            <div class="grid-item4">
+                <img src="../img/rana-grid4.jpg">
+            </div>
+            <div class="grid-item5">
+                <img src="../img/rana-grid5.jpg">
+            </div>
+            <div class="grid-item6">
+                <img src="../img/rana-grid6.jpg">
+            </div>
+            <div class="grid-item7">
+                <img src="../img/rana-grid7.jpg">
+            </div>
+            <div class="grid-item8">
+                <img src="../img/rana-grid8.jpg">
+            </div>
+            <div class="grid-item9">
+                <img src="../img/rana-grid9.jpg">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gabriel Boetto. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

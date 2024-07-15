@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="../img/logo-dnd.png" alt="Logo de la empresa">
+            <h2 class="title">Campaña de Mythralia DnD</h2>
+        </div>
+
+        <!-- Logos de redes sociales -->
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="../img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="mailto:info@tusitio.com">
+                <img src="../img/sobre.png" alt="Email">
+            </a>
+        </div>
+    </div>
+
+    <!-- Menú principal -->
+    <nav>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../pages/historia.html">HISTORIA</a></li>
+            <li><a href="../pages/razas.html">RAZAS Y CLASES</a></li>
+            <li><a href="../pages/galeria.html">GALERIA DE PERSONAJES</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+
+    <!-- Sección de Crear Tu Propio Héroe -->
+    <section class="create-hero">
+        <div class="hero-background">
+            <div class="hero-form">
+                <h2>Crea Tu Propio Héroe</h2>
+                <form action="#" method="post">
+                    <label for="hero-name">Nombre:</label>
+                    <input type="text" id="hero-name" name="hero-name" required>
+
+                    <label for="hero-race">Raza:</label>
+                    <select id="hero-race" name="hero-race" required>
+                        <option value="humano">Humano</option>
+                        <option value="elfo">Elfo</option>
+                        <option value="enano">Enano</option>
+                        <option value="orco">Orco</option>
+                        <option value="gnomo">Gnomo</option>
+                        <option value="draconido">Draconido</option>
+                    </select>
+
+                    <label for="hero-class">Clase:</label>
+                    <select id="hero-class" name="hero-class" required>
+                        <option value="guerrero">Guerrero</option>
+                        <option value="mago">Mago</option>
+                        <option value="pícaro">Pícaro</option>
+                        <option value="paladin">Paladín</option>
+                        <option value="cazador">Cazador</option>
+                        <option value="chaman">Chaman</option>
+                        <option value="druida">Druida</option>
+                    </select>
+
+                    <label for="hero-weapon">Arma Principal:</label>
+                    <input type="text" id="hero-weapon" name="hero-weapon" required>
+
+                    <label for="hero-alignment">Alineamiento:</label>
+                    <select id="hero-alignment" name="hero-alignment" required>
+                        <option value="legal-bueno">Legal Bueno</option>
+                        <option value="neutral-bueno">Neutral Bueno</option>
+                        <option value="caótico-bueno">Caótico Bueno</option>
+                        <option value="legal-neutral">Legal Neutral</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="caótico-neutral">Caótico Neutral</option>
+                        <option value="legal-malo">Legal Malo</option>
+                        <option value="neutral-malo">Neutral Malo</option>
+                        <option value="caótico-malo">Caótico Malo</option>
+                    </select>
+
+                    <label for="hero-description">Descripción del Personaje:</label>
+                    <textarea id="hero-description" name="hero-description" rows="5" required></textarea>
+
+                    <button type="submit">Crear Héroe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Gabriel Boetto. Todos los derechos reservados.</p>
+</footer>
+</body>
+
+</html>
