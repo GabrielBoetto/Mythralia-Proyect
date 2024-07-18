@@ -371,7 +371,7 @@ footer {
 }
 
 
-/* ESTILOS PARA GRID EN PRODUCTOS*/
+/* ESTILOS PARA GRID EN GALERIA*/
 .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
