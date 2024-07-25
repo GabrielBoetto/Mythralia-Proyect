@@ -1,0 +1,30 @@
+/* Estilos específicos para la página de historia */
+.historia {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.historia h2 {
+    text-align: center;
+    color: #333;
+    font-family: fuentemedieval;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    text-align: justify;
+    color: #666;
+    font-family: fuentecelta;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.historia img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}

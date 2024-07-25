@@ -1,10 +1,10 @@
-/* Estilos para el banner */
+/* Estilos específicos para la página de inicio */
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #947962; 
+    background-color: #947962;
 }
 
 .logo {
@@ -16,16 +16,13 @@
 .logo img {
     height: 80px;
     border-radius: 8px;
-    align-content: center;
 }
 
 .title {
     font-family: fuentemedieval;
     font-weight: 600;
-    font-style: normal;
     font-size: 28px;
     text-shadow: #111;
-    margin: 0;
     text-align: center;
     margin-top: 5px;
     color: antiquewhite;
@@ -41,7 +38,6 @@
     margin-left: 5px;
 }
 
-/* Estilos para el nav */
 nav {
     background-color: #333;
     padding: 10px;
@@ -72,7 +68,6 @@ nav {
 
 .menu li a {
     color: antiquewhite;
-    background-color: #333;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -82,7 +77,6 @@ nav {
     background-color: #111;
 }
 
-/* Estilos para el main */
 main {
     padding: 20px;
     background-color: rgb(221, 201, 174);
@@ -93,8 +87,7 @@ main h1 {
     color: antiquewhite;
     background-color: #333;
     margin-bottom: 5px;
-    border-color: #000000;
-    border-style: groove;
+    border: groove 1px #000;
 }
 
 main h2 {
@@ -104,8 +97,7 @@ main h2 {
     text-align: center;
     margin-bottom: 10px;
     background-color: #947962;
-    border-color: #000000;
-    border-style: groove;
+    border: groove 1px #000;
 }
 
 main p {
@@ -133,3 +125,36 @@ main div iframe {
     width: 100%;
     object-fit: cover;
 }
+
+.slider-frame {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 9s infinite alternate ease-in-out;
+    align-items: center;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+    align-items: center;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0%, 20% { margin-left: 0%; }
+    25%, 45% { margin-left: -100%; }
+    50%, 70% { margin-left: -200%; }
+    75%, 95% { margin-left: -300%; }
+}
+

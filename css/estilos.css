@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/**-------RESET------*/
+/* Reset y fuentes */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@
   font-family: fuentecelta;
   src: url(../font/CelticHand.ttf); }
 
-/* Estilos básicos para el cuerpo, el contenido y el footer */
+/* Estilos básicos */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -30,7 +30,7 @@ footer {
   width: 100%;
   box-sizing: border-box; }
 
-/* Estilos para el banner */
+/* Estilos específicos para la página de inicio */
 .banner {
   display: flex;
   justify-content: space-between;
@@ -45,16 +45,13 @@ footer {
 
 .logo img {
   height: 80px;
-  border-radius: 8px;
-  align-content: center; }
+  border-radius: 8px; }
 
 .title {
   font-family: fuentemedieval;
   font-weight: 600;
-  font-style: normal;
   font-size: 28px;
   text-shadow: #111;
-  margin: 0;
   text-align: center;
   margin-top: 5px;
   color: antiquewhite; }
@@ -67,7 +64,6 @@ footer {
   width: 42px;
   margin-left: 5px; }
 
-/* Estilos para el nav */
 nav {
   background-color: #333;
   padding: 10px;
@@ -93,7 +89,6 @@ nav {
 
 .menu li a {
   color: antiquewhite;
-  background-color: #333;
   text-decoration: none;
   padding: 10px;
   display: block; }
@@ -101,7 +96,6 @@ nav {
 .menu li a:hover {
   background-color: #111; }
 
-/* Estilos para el main */
 main {
   padding: 20px;
   background-color: #ddc9ae; }
@@ -111,8 +105,7 @@ main h1 {
   color: antiquewhite;
   background-color: #333;
   margin-bottom: 5px;
-  border-color: #000000;
-  border-style: groove; }
+  border: groove 1px #000; }
 
 main h2 {
   font-family: fuentecelta;
@@ -121,8 +114,7 @@ main h2 {
   text-align: center;
   margin-bottom: 10px;
   background-color: #947962;
-  border-color: #000000;
-  border-style: groove; }
+  border: groove 1px #000; }
 
 main p {
   font-family: fuentecelta;
@@ -145,7 +137,65 @@ main div iframe {
   width: 100%;
   object-fit: cover; }
 
-/* Estilos para la sección de Razas y Clases */
+.slider-frame {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  align-items: center; }
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 9s infinite alternate ease-in-out;
+  align-items: center; }
+
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+  align-items: center; }
+
+.slider-frame img {
+  width: 100%; }
+
+@keyframes slide {
+  0%, 20% {
+    margin-left: 0%; }
+  25%, 45% {
+    margin-left: -100%; }
+  50%, 70% {
+    margin-left: -200%; }
+  75%, 95% {
+    margin-left: -300%; } }
+
+/* Estilos específicos para la página de historia */
+.historia {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; }
+
+.historia h2 {
+  text-align: center;
+  color: #333;
+  font-family: fuentemedieval;
+  margin-bottom: 20px; }
+
+.historia p {
+  text-align: justify;
+  color: #666;
+  font-family: fuentecelta;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px; }
+
+.historia img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px; }
+
+/* Estilos específicos para Razas y Clases */
 .races-classes {
   max-width: 1280px;
   margin: 0 auto;
@@ -153,68 +203,163 @@ main div iframe {
 
 .races-classes h2 {
   text-align: center;
-  color: #000000; }
+  color: #333;
+  font-family: fuentecelta;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+  /* Añade negrita */
+  text-shadow: 2px 2px #ccc; }
 
-.descripcion-de-razas {
+.highlighted-title {
+  font-family: fuentemedieval;
+  font-size: 2rem;
+  /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+  /* Añade negrita */
+  text-shadow: 4px 4px #141414 !important;
+  /* Añade sombra al texto */
   color: antiquewhite !important;
-  background-color: #333; }
+  margin-bottom: 20px;
+  padding: 10px;
+  /* Espaciado interior */
+  border: 2px solid #000000;
+  /* Borde */
+  background-color: #3f0000;
+  /* Color de fondo */
+  width: 100%;
+  /* Ocupa todo el ancho del contenedor */
+  box-sizing: border-box;
+  /* Incluye el padding y el borde en el ancho total */ }
 
 .races-classes p {
-  text-align: center;
-  color: antiquewhite;
-  margin-bottom: 40px; }
+  text-align: justify;
+  color: #666;
+  font-family: fuentecelta;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px; }
 
 .card-container {
-  margin-bottom: 40px; }
-
-.card-container h3 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
 
 .card {
   display: flex;
-  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  /* Ajusta el ancho máximo */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
   margin-bottom: 20px;
-  background-color: #333;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; }
+
+.card:hover {
+  transform: scale(1.05); }
+
+.card img {
+  width: 30%;
+  object-fit: cover; }
+
+.card-content {
+  width: 70%;
+  padding: 20px; }
+
+.card-content h3 {
+  font-family: fuentemedieval;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px; }
+
+.card-content p {
+  font-family: fuentecelta;
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.4; }
+
+/* Estilos específicos para la galería */
+.galeria {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; }
+
+.galeria h2 {
+  text-align: center;
+  color: #333;
+  font-family: fuentemedieval;
+  margin-bottom: 20px; }
+
+.galeria .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.galeria .imagenes img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 
-.card img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px 0 0 8px; }
+.galeria .imagenes img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out; }
 
-.card-content {
-  padding: 20px; }
-
-.card-content h4 {
-  margin-top: 0;
-  color: antiquewhite; }
-
-.card-content p {
-  color: antiquewhite;
-  text-align: justify; }
-
-.clases img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: block;
+/* Estilos específicos para la página de contacto */
+.contacto {
+  max-width: 1280px;
   margin: 0 auto;
-  border-radius: 10%; }
-
-.clases {
-  text-align: center;
   padding: 20px;
-  background-color: #333;
-  color: antiquewhite;
-  font-family: Arial, sans-serif; }
+  background-color: #fff; }
 
-.clases h2 {
-  margin-top: 0;
-  color: antiquewhite; }
+.contacto h2 {
+  text-align: center;
+  color: #333;
+  font-family: fuentemedieval;
+  margin-bottom: 20px; }
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contacto label {
+  font-family: fuentecelta;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px; }
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px; }
+
+.contacto button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: fuentecelta;
+  font-size: 18px; }
+
+.contacto button:hover {
+  background-color: #111;
+  transition: background-color 0.3s ease-in-out; }
 
 /* Media Queries para hacer la página responsive */
 @media (max-width: 768px) {
@@ -284,26 +429,24 @@ main div iframe {
   .slider-frame ul {
     width: 400%; } }
 
-/* MEDIA QUERIES PARA RAZAS Y CLASES */
+/* Media Queries para la sección de Razas y Clases */
 @media (max-width: 768px) {
   .card {
     flex-direction: column; }
   .card img {
-    width: 100%;
-    height: auto; }
+    width: 100%; }
   .card-content {
-    padding: 10px; } }
+    width: 100%; } }
 
 @media (max-width: 350px) {
   .races-classes h2 {
     font-size: 1.5rem; }
   .races-classes p,
-  .card-container h3 {
+  .card-content h3 {
     font-size: 1rem; }
-  .card-content h4 {
-    font-size: 1.2rem; }
   .card-content p {
-    font-size: 0.9rem; } }
+    font-size: 1rem;
+    /* Ajuste para pantallas más pequeñas */ } }
 
 /* Estilo Footer para pantallas de tamaño de monitor */
 @media (min-width: 1024px) {

@@ -111,6 +111,8 @@ nav {
 
 .menu li a:hover {
     background-color: #111;
+    transition-duration: 1s;
+
 }
 
 
@@ -304,6 +306,7 @@ footer {
 
 .hero-form button:hover {
     background-color: #303030;
+    transition-duration: 1s;
 }
 
 /* ESTILOS PARA RAZAS Y CLASES*/

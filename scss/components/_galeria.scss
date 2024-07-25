@@ -1,0 +1,33 @@
+/* Estilos específicos para la galería */
+.galeria {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.galeria h2 {
+    text-align: center;
+    color: #333;
+    font-family: fuentemedieval;
+    margin-bottom: 20px;
+}
+
+.galeria .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria .imagenes img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.galeria .imagenes img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

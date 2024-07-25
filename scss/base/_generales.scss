@@ -1,4 +1,4 @@
-/**-------RESET------*/
+/* Reset y fuentes */
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +10,13 @@
     font-family: fuentemedieval;
     src: url(../font/RomanUncialModern.ttf);
 }
+
 @font-face {
     font-family: fuentecelta;
     src: url(../font/CelticHand.ttf);
 }
 
-/* Estilos básicos para el cuerpo, el contenido y el footer */
+/* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
     margin: 0;

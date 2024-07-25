@@ -1,84 +1,88 @@
-/* Estilos para la sección de Razas y Clases */
+/* Estilos específicos para Razas y Clases */
 .races-classes {
     max-width: 1280px;
     margin: 0 auto;
     padding: 20px;
 }
 
+
 .races-classes h2 {
     text-align: center;
-    color: #000000;
+    color: #333;
+    font-family: fuentecelta;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Añade negrita */
+    text-shadow: 2px 2px #ccc;
 }
 
-.descripcion-de-razas {
+.highlighted-title {
+    font-family: fuentemedieval;
+    font-size: 2rem; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Añade negrita */
+    text-shadow: 4px 4px #141414 !important; /* Añade sombra al texto */
     color: antiquewhite !important;
-    background-color: #333;
+    margin-bottom: 20px;
+    padding: 10px; /* Espaciado interior */
+    border: 2px solid #000000; /* Borde */
+    background-color: #3f0000; /* Color de fondo */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 .races-classes p {
-    text-align: center;
-    color: antiquewhite;
-    margin-bottom: 40px;
+    text-align: justify;
+    color: #666;
+    font-family: fuentecelta;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .card-container {
-    margin-bottom: 40px;
-}
-
-.card-container h3 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .card {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #333;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo */
+    border: 1px solid #ddd;
     border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
-    width: 200px;
-    height: 200px;
+    width: 30%;
     object-fit: cover;
-    border-radius: 8px 0 0 8px;
 }
 
 .card-content {
+    width: 70%;
     padding: 20px;
 }
 
-.card-content h4 {
-    margin-top: 0;
-    color: antiquewhite;
+.card-content h3 {
+    font-family: fuentemedieval;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .card-content p {
-    color: antiquewhite;
-    text-align: justify;
-}
-
-.clases img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10%;
-}
-
-.clases {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: antiquewhite;
-    font-family: Arial, sans-serif;
-}
-
-.clases h2 {
-    margin-top: 0;
-    color: antiquewhite;
+    font-family: fuentecelta;
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.4;
 }
