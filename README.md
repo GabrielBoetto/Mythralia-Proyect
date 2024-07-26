@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **Mythralia Proyect**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: gabrielboetto@hotmail.com</h3>
 <p align="left">
 </p>
 
