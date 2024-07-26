@@ -1,31 +1,89 @@
-/* Estilos específicos para la página de historia */
+@mixin card-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@mixin rounded-corners($radius: 8px) {
+    border-radius: $radius;
+}
+
+// Estilos específicos para la página de historia
 .historia {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    font-family: 'Georgia', serif;
+}
+
+.historia h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'fuentemedieval', serif;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .historia h2 {
-    text-align: center;
     color: #333;
-    font-family: fuentemedieval;
-    margin-bottom: 20px;
+    font-family: 'fuentemedieval', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c97200;
 }
 
-.lore p {
-    text-align: justify;
-    color: #000000;
-    border-radius: 5px;
-    font-family: fuentecelta;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+.lore {
+    p {
+        text-align: justify;
+        color: #333;
+        background-color: #ffffff;
+        padding: 15px;
+        border: 1px solid #ddd;
+        @include rounded-corners(10px);
+        @include card-shadow;
+        font-family: 'fuentecelta', serif;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
 
-.historia img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
+        &:hover {
+            background-color: #f9f9f9;
+            border-color: #c97200;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        @include rounded-corners(10px);
+        @include card-shadow;
+        margin-bottom: 20px;
+    }
+
+    .ranas-window-sized {
+        text-align: center;
+        margin-top: 40px;
+
+        img {
+            max-width: 100%;
+            @include rounded-corners(10px);
+        }
+
+        button {
+            background-color: #c97200;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #303030;
+            }
+        }
+    }
 }

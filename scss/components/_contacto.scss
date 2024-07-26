@@ -1,55 +1,63 @@
-/* Estilos específicos para la página de contacto */
-.contacto {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.contacto h2 {
+/* Estilos específicos para la página de contacto/form */
+.create-hero {
+    background-color: rgb(221, 201, 174);
+    padding: 50px 0;
     text-align: center;
-    color: #333;
-    font-family: fuentemedieval;
-    margin-bottom: 20px;
-}
 
-.contacto form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .hero-background {
+        background-image: url('../img/Default_A_cozy_warm_tavern_filled_with_wooden_furniture_a_roar_2.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.contacto label {
-    font-family: fuentecelta;
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-}
+    .hero-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-.contacto input,
-.contacto textarea {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
+        h2 {
+            margin-bottom: 20px;
+        }
 
-.contacto button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: fuentecelta;
-    font-size: 18px;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-.contacto button:hover {
-    background-color: #111;
-    transition: background-color 0.3s ease-in-out;
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #c97200;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+
+            &:hover {
+                background-color: #303030;
+                transition-duration: 1s;
+            }
+        }
+    }
 }
