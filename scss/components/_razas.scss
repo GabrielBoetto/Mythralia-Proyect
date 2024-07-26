@@ -1,6 +1,6 @@
 /* Estilos específicos para Razas y Clases */
 .races-classes {
-    max-width: 1280px;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
 }
@@ -32,24 +32,23 @@
 
 .races-classes p {
     text-align: justify;
-    color: #666;
+    color: #000000 !important;
     font-family: fuentecelta;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .card {
     display: flex;
     width: 100%;
-    max-width: 1200px; /* Ajusta el ancho máximo */
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -64,7 +63,7 @@
 }
 
 .card img {
-    width: 30%;
+    width: 25%;
     object-fit: cover;
 }
 

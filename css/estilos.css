@@ -202,7 +202,7 @@ main div iframe {
 
 /* Estilos específicos para Razas y Clases */
 .races-classes {
-  max-width: 1280px;
+  max-width: auto;
   margin: 0 auto;
   padding: 20px; }
 
@@ -240,23 +240,21 @@ main div iframe {
 
 .races-classes p {
   text-align: justify;
-  color: #666;
+  color: #000000 !important;
   font-family: fuentecelta;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
 
 .card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%; }
+  align-items: center; }
 
 .card {
   display: flex;
   width: 100%;
-  max-width: 1200px;
-  /* Ajusta el ancho máximo */
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -269,7 +267,7 @@ main div iframe {
   transform: scale(1.05); }
 
 .card img {
-  width: 30%;
+  width: 25%;
   object-fit: cover; }
 
 .card-content {
@@ -290,32 +288,60 @@ main div iframe {
 
 /* Estilos específicos para la galería */
 .galeria {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Tres columnas de igual tamaño */
+  grid-template-rows: repeat(4, 1fr);
+  /* Cuatro filas de igual tamaño */
+  gap: 8px;
+  /* Espacio entre los elementos */
+  grid-auto-flow: row;
+  grid-template-areas: "grid-item1 grid-item1 grid-item2" "grid-item3 grid-item4 grid-item5" "grid-item6 grid-item7 grid-item5" "grid-item8 grid-item8 grid-item9";
+  width: 100%;
+  /* Asegura que la galería ocupe todo el ancho del contenedor */ }
 
-.galeria h2 {
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative; }
+
+.galeria h3 {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.55);
+  width: 100%;
+  color: white;
   text-align: center;
-  color: #333;
-  font-family: fuentemedieval;
-  margin-bottom: 20px; }
+  padding: 5px; }
 
-.galeria .imagenes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+/* Definiciones para las áreas de la cuadrícula */
+.grid-item1 {
+  grid-area: grid-item1; }
 
-.galeria .imagenes img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+.grid-item2 {
+  grid-area: grid-item2; }
 
-.galeria .imagenes img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out; }
+.grid-item3 {
+  grid-area: grid-item3; }
+
+.grid-item4 {
+  grid-area: grid-item4; }
+
+.grid-item5 {
+  grid-area: grid-item5; }
+
+.grid-item6 {
+  grid-area: grid-item6; }
+
+.grid-item7 {
+  grid-area: grid-item7; }
+
+.grid-item8 {
+  grid-area: grid-item8; }
+
+.grid-item9 {
+  grid-area: grid-item9; }
 
 /* Estilos específicos para la página de contacto */
 .contacto {
@@ -456,7 +482,12 @@ main div iframe {
 /* Estilo Footer para pantallas de tamaño de monitor */
 @media (min-width: 1024px) {
   footer {
-    padding: 20px 40px; } }
+    padding: 20px 40px; }
+  .card img {
+    width: 21rem;
+    object-fit: cover; }
+  .card-content {
+    width: 100%; } }
 
 /* Estilo Footer para tablets */
 @media (max-width: 1023px) and (min-width: 768px) {

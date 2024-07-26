@@ -145,7 +145,15 @@
     footer {
         padding: 20px 40px;
     }
-}
+    .card img {
+        width: 21rem;
+        object-fit: cover;
+    }
+    .card-content {
+        width: 100%;
+    }
+
+    }
 
 /* Estilo Footer para tablets */
 @media (max-width: 1023px) and (min-width: 768px) {
