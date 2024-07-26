@@ -30,6 +30,52 @@ footer {
   width: 100%;
   box-sizing: border-box; }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #947962;
+  background: linear-gradient(50deg, black, #947962, #490000);
+  animation: cambiar 3s ease-in infinite;
+  position: relative;
+  background-size: 400% 400%; }
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.logo img {
+  height: 80px;
+  border-radius: 8px; }
+
+.title {
+  font-family: fuentemedieval;
+  font-weight: 600;
+  font-size: 28px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 5px;
+  color: antiquewhite; }
+
+.social-media a {
+  margin-left: 10px;
+  text-decoration: none; }
+
+.social-media img {
+  height: 42px;
+  width: 42px;
+  margin-left: 5px; }
+
 nav {
   background-color: #303030;
   padding: 10px 20px;
@@ -63,92 +109,8 @@ nav {
         nav .menu li a:hover {
           background-color: #490000;
           color: #fff; }
-  @media (max-width: 768px) {
-    nav .hamburger {
-      display: block; }
-    nav .menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #303030;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      padding: 20px; }
-      nav .menu li {
-        margin: 10px 0; }
-        nav .menu li a {
-          padding: 15px;
-          text-align: center; }
-    nav .menu.show {
-      display: flex; } }
 
 /* Estilos específicos para la página de inicio */
-.banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #947962; }
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.logo img {
-  height: 80px;
-  border-radius: 8px; }
-
-.title {
-  font-family: fuentemedieval;
-  font-weight: 600;
-  font-size: 28px;
-  text-shadow: #111;
-  text-align: center;
-  margin-top: 5px;
-  color: antiquewhite; }
-
-.social-media a {
-  margin-left: 10px; }
-
-.social-media img {
-  height: 42px;
-  width: 42px;
-  margin-left: 5px; }
-
-nav {
-  background-color: #333;
-  padding: 10px;
-  text-align: center; }
-
-.hamburger {
-  display: none;
-  background-color: #333; }
-
-.menu {
-  background-color: #333;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center; }
-
-.menu li {
-  margin-right: 20px; }
-
-.menu li:last-child {
-  margin-right: 0; }
-
-.menu li a {
-  color: antiquewhite;
-  text-decoration: none;
-  padding: 10px;
-  display: block; }
-
-.menu li a:hover {
-  background-color: #111; }
-
 main {
   padding: 20px;
   background-color: #ddc9ae; }
@@ -165,7 +127,7 @@ main h2 {
   color: #333;
   font-family: fuentecelta;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   /* Aumenta el tamaño de la fuente */
   font-weight: bold;
   /* Añade negrita */
@@ -263,7 +225,7 @@ main div iframe {
   transition: background-color 0.3s ease, border-color 0.3s ease; }
   .lore p:hover {
     background-color: #f9f9f9;
-    border-color: #c97200; }
+    border-color: #4b0000; }
 
 .lore img {
   width: 100%;
@@ -301,7 +263,7 @@ main div iframe {
   color: #333;
   font-family: fuentecelta;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   /* Aumenta el tamaño de la fuente */
   font-weight: bold;
   /* Añade negrita */
@@ -516,6 +478,26 @@ main div iframe {
     padding: 5px; }
   nav ul li a {
     padding: 5px; } }
+
+@media (max-width: 768px) {
+  nav .hamburger {
+    display: block; }
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #303030;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px; }
+    nav .menu li {
+      margin: 10px 0; }
+      nav .menu li a {
+        padding: 15px;
+        text-align: center; }
+  nav .menu.show {
+    display: flex; } }
 
 /* Media Queries Slider*/
 @media (max-width: 1280px) {

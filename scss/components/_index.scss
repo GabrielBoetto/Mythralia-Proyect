@@ -1,82 +1,4 @@
 /* Estilos específicos para la página de inicio */
-.banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #947962;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo img {
-    height: 80px;
-    border-radius: 8px;
-}
-
-.title {
-    font-family: fuentemedieval;
-    font-weight: 600;
-    font-size: 28px;
-    text-shadow: #111;
-    text-align: center;
-    margin-top: 5px;
-    color: antiquewhite;
-}
-
-.social-media a {
-    margin-left: 10px;
-}
-
-.social-media img {
-    height: 42px;
-    width: 42px;
-    margin-left: 5px;
-}
-
-nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-}
-
-.hamburger {
-    display: none;
-    background-color: #333;
-}
-
-.menu {
-    background-color: #333;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu li:last-child {
-    margin-right: 0;
-}
-
-.menu li a {
-    color: antiquewhite;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-}
-
-.menu li a:hover {
-    background-color: #111;
-}
-
 main {
     padding: 20px;
     background-color: rgb(221, 201, 174);
@@ -95,7 +17,7 @@ main h2 {
     color: #333;
     font-family: fuentecelta;
     margin-bottom: 20px;
-    font-size: 2rem; /* Aumenta el tamaño de la fuente */
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente */
     font-weight: bold; /* Añade negrita */
     text-shadow: 2px 2px #ccc;
     background-color: #947962;
