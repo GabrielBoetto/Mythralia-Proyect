@@ -33,3 +33,87 @@ footer {
     width: 100%;
     box-sizing: border-box;
 }
+
+// Variables para colores y fuentes
+$primary-color: #490000;
+$hover-color: #490000;
+$background-color: #303030;
+$text-color: #fff;
+
+// Estilos para el menú principal
+nav {
+    background-color: $background-color;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+
+        .hamburger-line {
+            width: 30px;
+            height: 3px;
+            background-color: $text-color;
+            margin: 5px;
+            transition: 0.3s;
+        }
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 15px;
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-size: 16px;
+                font-family: 'Arial', sans-serif;
+                padding: 10px;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hamburger {
+            display: block;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: $background-color;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            padding: 20px;
+
+            li {
+                margin: 10px 0;
+
+                a {
+                    padding: 15px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .menu.show {
+            display: flex;
+        }
+    }
+}
