@@ -36,8 +36,8 @@ footer {
   align-items: center;
   padding: 10px;
   background-color: #947962;
-  background: linear-gradient(50deg, black, #947962, #490000);
-  animation: cambiar 3s ease-in infinite;
+  background: linear-gradient(50deg, #dd0000, black, #0093ce);
+  animation: cambiar 5s ease-in infinite;
   position: relative;
   background-size: 400% 400%; }
 
@@ -102,7 +102,7 @@ nav {
         text-decoration: none;
         color: #fff;
         font-size: 16px;
-        font-family: 'Arial', sans-serif;
+        font-family: fuentecelta;
         padding: 10px;
         border-radius: 5px;
         transition: background-color 0.3s, color 0.3s; }
@@ -439,7 +439,7 @@ main div iframe {
       cursor: pointer;
       font-size: 16px; }
       .create-hero .hero-form button:hover {
-        background-color: #303030;
+        background-color: #00a6cf;
         transition-duration: 1s; }
 
 /* Media Queries para hacer la página responsive */
