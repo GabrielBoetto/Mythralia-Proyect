@@ -26,7 +26,7 @@ body {
 footer {
     font-size: larger;
     background-color: #333;
-    color: antiquewhite;
+    color: #faebd7;
     text-align: center;
     padding: 20px;
     position: relative;
@@ -39,56 +39,82 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #947962;
-    background: linear-gradient(50deg,#dd0000,black,#0093ce);
-    animation: cambiar 5s ease-in infinite;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #3c2a1a, #000);
+    animation: cambiar 5s ease-in-out infinite;
     position: relative;
-    background-size: 400% 400%;
+    background-size: 200% 200%;
+    border-bottom: 5px solid #3f0000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes cambiar{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
+@keyframes cambiar {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .logo img {
-    height: 80px;
-    border-radius: 8px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 .title {
     font-family: fuentemedieval;
-    font-weight: 600;
-    font-size: 28px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    margin-top: 5px;
-    color: antiquewhite;
+    font-weight: 700;
+    font-size: 36px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    color: #f0e6d6;
+    margin: 0;
 }
 
 .social-media a {
-    margin-left: 10px;
+    margin-left: 15px;
     text-decoration: none;
 }
 
 .social-media img {
-    height: 42px;
-    width: 42px;
-    margin-left: 5px;
+    height: 50px;
+    width: 50px;
+    padding: auto;
+    margin-left: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
 }
+
+.social-media img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+
 
 
 // Estilos navbar
 
 // Variables para colores y fuentes
+
 $primary-color: #490000;
 $hover-color: #490000;
 $background-color: #303030;
