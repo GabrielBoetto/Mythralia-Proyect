@@ -180,31 +180,4 @@ nav {
             }
         }
     }
-
-    // Mostrar el menú en pantallas grandes
-    @media (min-width: 769px) {
-        .hamburger {
-            display: none; // Ocultar el botón de hamburguesa en pantallas grandes
-        }
-
-        .menu {
-            display: flex;
-            position: static; // Asegura que el menú se muestre correctamente en pantallas grandes
-            max-height: none; // Mostrar el menú sin restricciones de altura
-            flex-direction: row;
-            background-color: transparent; // Fondo transparente para pantallas grandes
-            width: auto; // Ajusta el ancho en pantallas grandes
-            margin: 0;
-            padding: 0;
-
-            li {
-                margin: 0 15px;
-
-                a {
-                    padding: 10px;
-                    text-align: center;
-                }
-            }
-        }
-    }
 }
