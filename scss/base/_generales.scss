@@ -114,9 +114,7 @@ footer {
 // Estilos navbar
 
 // Variables para colores y fuentes
-
 $primary-color: #490000;
-$hover-color: #490000;
 $background-color: #303030;
 $text-color: #fff;
 
@@ -124,12 +122,18 @@ nav {
     background-color: $background-color;
     padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; // Cambiado para alinear correctamente
     align-items: center;
+    position: relative; // Asegura que el menú se posicione correctamente
+
+    .menu-toggle {
+        display: none; // Ocultar checkbox en pantallas grandes
+    }
 
     .hamburger {
-        display: none;
+        display: none; // Ocultar el botón de hamburguesa en pantallas grandes
         cursor: pointer;
+        z-index: 2;
 
         .hamburger-line {
             width: 30px;
@@ -145,22 +149,60 @@ nav {
         display: flex;
         margin: 0;
         padding: 0;
+        position: absolute;
+        top: 60px; // Ajusta para que no tape el banner
+        left: 0;
+        width: 100%;
+        background-color: $background-color;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1; // Asegura que el menú esté por encima de otros elementos
+        transition: max-height 0.3s ease;
+        max-height: 0; // Ocultar menú por defecto en pantallas pequeñas
+        overflow: hidden;
 
         li {
-            margin: 0 15px;
+            margin: 10px 0;
 
             a {
                 text-decoration: none;
                 color: $text-color;
                 font-size: 16px;
                 font-family: fuentecelta;
-                padding: 10px;
+                padding: 15px;
                 border-radius: 5px;
                 transition: background-color 0.3s, color 0.3s;
 
                 &:hover {
                     background-color: $primary-color;
                     color: #fff;
+                }
+            }
+        }
+    }
+
+    // Mostrar el menú en pantallas grandes
+    @media (min-width: 769px) {
+        .hamburger {
+            display: none; // Ocultar el botón de hamburguesa en pantallas grandes
+        }
+
+        .menu {
+            display: flex;
+            position: static; // Asegura que el menú se muestre correctamente en pantallas grandes
+            max-height: none; // Mostrar el menú sin restricciones de altura
+            flex-direction: row;
+            background-color: transparent; // Fondo transparente para pantallas grandes
+            width: auto; // Ajusta el ancho en pantallas grandes
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    padding: 10px;
+                    text-align: center;
                 }
             }
         }

@@ -2,52 +2,54 @@
 main {
     padding: 20px;
     background-color: rgb(221, 201, 174);
+
+    h1 {
+        text-align: center;
+        color: antiquewhite;
+        background-color: #333;
+        margin-bottom: 5px;
+        border: groove 1px #000;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        font-family: fuentecelta;
+        margin-bottom: 20px;
+        font-size: 1.6rem; /* Aumenta el tamaño de la fuente */
+        font-weight: bold; /* Añade negrita */
+        text-shadow: 2px 2px #ccc;
+        background-color: #947962;
+        border: groove 1px #000;
+    }
+
+    p {
+        font-family: fuentecelta;
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    div iframe {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
-main h1 {
-    text-align: center;
-    color: antiquewhite;
-    background-color: #333;
-    margin-bottom: 5px;
-    border: groove 1px #000;
-}
+.ranas-window-sized {
+    button {
+        margin-bottom: 20px;
+    }
 
-main h2 {
-    text-align: center;
-    color: #333;
-    font-family: fuentecelta;
-    margin-bottom: 20px;
-    font-size: 1.6rem; /* Aumenta el tamaño de la fuente */
-    font-weight: bold; /* Añade negrita */
-    text-shadow: 2px 2px #ccc;
-    background-color: #947962;
-    border: groove 1px #000;
-}
+    a {
+        text-decoration: none;
+    }
 
-main p {
-    font-family: fuentecelta;
-    font-size: x-large;
-    font-weight: 500;
-}
-
-.ranas-window-sized button {
-    margin-bottom: 20px;
-}
-
-.ranas-window-sized a {
-    text-decoration: none;
-}
-
-.ranas-window-sized img {
-    width: 100%;
-    height: 5%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-main div iframe {
-    width: 100%;
-    object-fit: cover;
+    img {
+        width: 100%;
+        height: 5%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
 }
 
 .slider-frame {
@@ -55,24 +57,24 @@ main div iframe {
     height: auto;
     overflow: hidden;
     align-items: center;
-}
 
-.slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 9s infinite alternate ease-in-out;
-    align-items: center;
-}
+    ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 9s infinite alternate ease-in-out;
+        align-items: center;
+    }
 
-.slider-frame li {
-    list-style: none;
-    width: 100%;
-    align-items: center;
-}
+    li {
+        list-style: none;
+        width: 100%;
+        align-items: center;
+    }
 
-.slider-frame img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 @keyframes slide {

@@ -63,35 +63,16 @@
 
 // Nav bar
 nav{
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
+    // Mostrar el menú en pantallas pequeñas
+    @media (max-width: 768px) {
+        .hamburger {
+            display: block; // Mostrar el botón de hamburguesa en pantallas pequeñas
+        }
 
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: $background-color;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px;
-
-        li {
-            margin: 10px 0;
-
-            a {
-                padding: 15px;
-                text-align: center;
-            }
+        .menu-toggle:checked + .hamburger + .menu {
+            max-height: 500px; // Ajusta según la altura del contenido del menú
         }
     }
-
-    .menu.show {
-        display: flex;
-    }
-}
 }
 
 /* Media Queries Slider*/
