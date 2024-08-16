@@ -21,6 +21,14 @@
     }
 }
 
+@media (min-width: 481px){
+    .logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+}
+
 @media (max-width: 480px) {
     .logo img {
         height: 80px;
@@ -133,6 +141,11 @@ nav{
     .slider-frame ul {
         width: 400%;
     }
+
+    img {
+        width: 100%;
+        height: 100% !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -143,6 +156,11 @@ nav{
     .slider-frame ul {
         width: 400%;
     }
+
+    img {
+        width: 100%;
+        height: 100% !important;
+    }
 }
 
 @media (max-width: 350px) {
@@ -152,6 +170,11 @@ nav{
 
     .slider-frame ul {
         width: 400%;
+    }
+
+    img {
+        width: 100%;
+        height: 100% !important;
     }
 }
 
@@ -184,6 +207,47 @@ nav{
         font-size: 1rem; /* Ajuste para pantallas más pequeñas */
     }
 }
+
+//Media Queries de img de Grid en galeria
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .galeria {
+      grid-template-columns: repeat(2, 1fr); // Dos columnas en pantallas medianas
+      grid-template-rows: auto; // Deja que las filas se ajusten según el contenido
+      grid-template-areas:
+        "grid-item1 grid-item1"
+        "grid-item2 grid-item2"
+        "grid-item3 grid-item4"
+        "grid-item5 grid-item5"
+        "grid-item6 grid-item7"
+        "grid-item8 grid-item8"
+        "grid-item9 grid-item9";
+    }
+  
+    img {
+      object-fit: contain; // Ajusta la imagen sin cortarla, manteniendo proporciones
+      height: auto; // Ajuste flexible de la altura de las imágenes
+    }
+  }
+  
+  // Media queries para pantallas pequeñas (máx. 768px)
+  @media (max-width: 768px) {
+    .galeria {
+      grid-template-columns: 1fr; // Una columna en pantallas pequeñas
+      grid-template-rows: repeat(9, auto); // Ajusta el tamaño según el contenido
+      grid-template-areas:
+        "grid-item1"
+        "grid-item2"
+        "grid-item3"
+        "grid-item4"
+        "grid-item5"
+        "grid-item6"
+        "grid-item7"
+        "grid-item8"
+        "grid-item9";
+    }
+  }
+
 
 /* Estilo Footer para pantallas de tamaño de monitor */
 @media (min-width: 1024px) {

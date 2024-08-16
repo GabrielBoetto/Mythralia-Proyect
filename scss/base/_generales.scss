@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: fuentemedieval;
+    h2{
+    padding: 6px;
+    }
 }
 
 @font-face {
@@ -116,7 +119,7 @@ footer {
 // Variables para colores y fuentes
 $primary-color: #490000;
 $background-color: #303030;
-$text-color: #fff;
+$text-color: antiquewhite;
 
 nav {
     background-color: $background-color;
@@ -171,7 +174,7 @@ nav {
                 font-family: fuentecelta;
                 padding: 15px;
                 border-radius: 5px;
-                transition: background-color 0.3s, color 0.3s;
+                transition: background-color 0.7s, color 0.7s;
 
                 &:hover {
                     background-color: $primary-color;
